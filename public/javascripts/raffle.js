@@ -97,7 +97,7 @@ function startRaffle() {
 
 /* executed each 0.1 sec */
 function raffleAnimation() {
-    var seats = $('.seat');
+    var seats = $('.material-icons');
     seats.removeClass('selected');
     pos = Math.floor(Math.random()*seats.length);
     seats[pos].classList.add('selected');
