@@ -14,7 +14,7 @@
 }
 
 #raffle-container {
-    margin: 20px auto 0 auto;
+    margin: 30px;
     text-align: center;
 }
 
@@ -46,6 +46,8 @@
 }
 
 .row-letter {
+    position: relative;
+    bottom: 6px;
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -84,4 +86,42 @@
 
 .material-icons {
     font-size: 28px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .material-icons {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .material-icons {
+        font-size: 19px;
+    }
+    #raffle-container {
+        margin: 10px 0 0 0;
+    }
+    .row-letter, .row-number {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .material-icons {
+        font-size: 14px;
+    }
+    #raffle-container {
+        margin: 10px 0 0 0;
+    }
+    .row-letter, .row-number {
+        font-size: 12px;
+    }
+
 }
