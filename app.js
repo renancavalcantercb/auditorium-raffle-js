@@ -38,8 +38,16 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+/* server configuration */
 
-app.listen(3000, function () {
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
+
+app.listen(port, function () {
   console.log('Example app listening on port 3000!');
 });
+
+module.exports = app;
