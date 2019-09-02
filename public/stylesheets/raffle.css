@@ -1,0 +1,87 @@
+.ml16 {
+    color: #402d2d;
+    padding: 40px 0;
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+}
+
+.ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+#raffle-container {
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+#animation-container {
+    width: 100%;
+}
+
+
+.header {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.row {
+    color: #b72727;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.row-number {
+    text-align: center;
+    display: inline-block;
+    color: grey;
+    width: 5%;
+    border: 1px solid transparent;
+}
+
+.row-letter {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    color: grey;
+    width: 5%;
+}
+
+.seat {
+    text-align: center;
+    width: 5%;
+    display: inline-block;
+    border: 3px solid transparent;
+}
+
+.empty-seat {
+    text-align: center;
+    width: 5%;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.selected {
+    border-color: #f0ad4e;
+}
+
+.hide {
+    display: none !important;
+}
+
+.spec_helper1 .custom-jumbo {
+    margin-top: 50px;
+    width: 75%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: 0;
+}
+
+.material-icons {
+    font-size: 28px;
+}

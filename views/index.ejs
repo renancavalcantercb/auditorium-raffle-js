@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/raffle.css"/>
+    <script src="https://kit.fontawesome.com/bfafdc5838.js"></script>
+  </head>
+  <body>
+    <div id="raffle-app" class="container spec_helper1">
+
+      <div class="jumbotron custom-jumbo">
+
+        <div style="display: flex; justify-content: space-between;">
+          <span style="margin-left: 10px">Sorteio Looqday</span>
+          <div style="margin-right: 10px">
+            <button style="margin-bottom: 3px" class="btn btn-default btn-ms looqbox-panel-heading-btn"><i class="fa fa-link board_i"></i></button>
+            <button style="margin-bottom: 3px" class="btn btn-default btn-ms looqbox-panel-heading-btn"><i class="fa fa-star-o board_i"></i></button>
+            <button style="margin-bottom: 3px" class="btn btn-default btn-ms looqbox-panel-heading-btn"><i class="fa fa-refresh board_i"></i></button>
+            <button style="margin-bottom: 3px" class="btn btn-default btn-ms looqbox-panel-heading-btn"><i class="fa fa-times board_i"></i></button>
+          </div>
+        </div>
+
+        <hr style="border-top: 1px solid grey; margin-top: 0">
+
+        <div style="text-align: center; margin-top: 30px">
+          <button class="btn btn-warning" id="raffle-button">Sortear!</button>
+        </div>
+
+        <div id="raffle-container" style="margin: 30px">
+          <div id="animation-container"></div>
+          <h4 style="margin-top: 0; display: none" class="ml16">A 12</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="/javascripts/confetti.js"></script>
+    <script src="/javascripts/raffle.js"></script>
+  </body>
+</html>
