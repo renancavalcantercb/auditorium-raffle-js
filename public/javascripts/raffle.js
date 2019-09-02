@@ -92,7 +92,7 @@ function startRaffle() {
     // animation lasts for 5 sec
     setTimeout(function(){
         stopRaffle(animationId);
-    }, 5000);
+    }, 2500);
 }
 
 /* executed each 0.1 sec */
