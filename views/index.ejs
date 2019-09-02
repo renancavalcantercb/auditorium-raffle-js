@@ -8,21 +8,21 @@
     <script src="/javascripts/libraries/fontawesome.min.js"></script>
   </head>
   <body>
-    <div id="raffle-app" class="container spec_helper1">
+    <div id="raffle-app" class="container">
 
-      <div class="jumbotron custom-jumbo">
+      <div id="raffle-holder" class="jumbotron">
 
-        <h3 style="padding-top: 10px" class="text-center">Sorteio Looqbox day</h3>
+        <h3 id="raffle-title">Sorteio Looqbox day</h3>
 
-        <hr style="border-top: 1px solid #bdbbbb; margin-top: 0">
+        <hr id="raffle-title-hr">
 
-        <div style="text-align: center; margin-top: 30px">
+        <div id="raffle-button-container">
           <button class="btn btn-warning" id="raffle-button">Sortear!</button>
         </div>
 
         <div id="raffle-container">
           <div id="animation-container"></div>
-          <h4 style="margin-top: 0; display: none" class="ml16">A 12</h4>
+          <h4 id="raffle-winner" class="ml16">A 12</h4>
         </div>
 
       </div>
