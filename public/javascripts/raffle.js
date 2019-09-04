@@ -88,11 +88,11 @@ function startRaffle() {
     // hide previous winner
     winnerDisplayElement.css('display', 'none');
     // start raffle animation
-    animationId = setInterval(raffleAnimation, 100);
+    animationId = setInterval(raffleAnimation, 125);
     // animation lasts for 5 sec
     setTimeout(function(){
         stopRaffle(animationId);
-    }, 2500);
+    }, 3000);
 }
 
 /* executed each 0.1 sec */
