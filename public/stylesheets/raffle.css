@@ -20,7 +20,6 @@
 #raffle-holder {
     margin-top: 50px;
     margin-left: 12%;
-    width: 75%;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
     padding: 0;
 }
@@ -74,7 +73,7 @@
     text-align: center;
     display: inline-block;
     color: grey;
-    width: 5%;
+    width: calc(100% / 39); /* 39 é o número de cadeiras por linha */
     border: 1px solid transparent;
 }
 
@@ -85,20 +84,20 @@
     padding: 0;
     display: inline-block;
     color: grey;
-    width: 5%;
+    width: calc(100% / 36); /* 39 é o número de cadeiras por linha */
 }
 
 .seat {
-    text-align: center;
-    width: 5%;
-    display: inline-block;
+  text-align: center;
+  width: calc(100% / 39); /* 39 é o número de cadeiras por linha */
+  display: inline-block;
 }
 
 .empty-seat {
-    text-align: center;
-    width: 5%;
-    display: inline-block;
-    border: 1px solid transparent;
+  text-align: center;
+  width: calc(100% / 39); /* 39 é o número de cadeiras por linha */
+  display: inline-block;
+  border: 1px solid transparent;
 }
 
 .selected {
@@ -110,7 +109,7 @@
 }
 
 .material-icons {
-    font-size: 28px;
+    font-size: 17px;
     border: 2px solid transparent;
 }
 
@@ -135,7 +134,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
 
     .material-icons {
-        font-size: 19px;
+        font-size: 15px;
     }
     #raffle-container {
         margin: 10px 0 0 0;
@@ -153,13 +152,13 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
     .material-icons {
-        font-size: 14px;
+        font-size: 12px;
     }
     #raffle-container {
         margin: 10px 0 0 0;
     }
     .row-letter, .row-number {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 }
