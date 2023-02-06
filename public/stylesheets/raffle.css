@@ -70,7 +70,7 @@
     text-align: center;
     display: inline-block;
     color: grey;
-    width: calc(100% / 39); /* 39 é o número de cadeiras por linha */
+    width: calc(100% / 38);
     border: 1px solid transparent;
 }
 
@@ -81,18 +81,18 @@
     padding: 0;
     display: inline-block;
     color: grey;
-    width: calc(100% / 36); /* 39 é o número de cadeiras por linha */
+    width: calc(100% / 38);
 }
 
 .seat {
   text-align: center;
-  width: calc(100% / 39); /* 39 é o número de cadeiras por linha */
+  width: calc(100% / 38);
   display: inline-block;
 }
 
 .empty-seat {
   text-align: center;
-  width: calc(100% / 39); /* 39 é o número de cadeiras por linha */
+  width: calc(100% / 38);
   display: inline-block;
   border: 1px solid transparent;
 }
@@ -106,7 +106,7 @@
 }
 
 .material-icons {
-    font-size: 17px;
+    font-size: 24px;
     border: 2px solid transparent;
 }
 
