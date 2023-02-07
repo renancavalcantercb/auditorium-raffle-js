@@ -89,9 +89,9 @@ function createRaffleContainer() {
       content += '</div>';
   }
   container.html(header + content);
-  document.querySelector('.header > .row-number:nth-child(13)').style.marginRight = '27px';
-  document.querySelector('.header > .row-number:nth-child(25)').style.marginRight = '27px';
-  document.querySelector('#animation-container > .row:nth-child(12)').style.paddingTop = "24px";
+  document.querySelector('.header > .row-number:nth-child(13)').style.marginRight = '2.30%';
+  document.querySelector('.header > .row-number:nth-child(25)').style.marginRight = '2.30%';
+  document.querySelector('#animation-container > .row:nth-child(11)').style.paddingTop = '2%';
 }
 
 
