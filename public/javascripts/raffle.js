@@ -48,6 +48,19 @@ function createRaffleContainer() {
   var container = $('#animation-container');
   var header = "";
   var content = "";
+  let = excludedSeats = {
+    A: [1, 2, 5],
+    B: [5, 10],
+    C: [5, 10],
+    D: [5, 10],
+    E: [5, 10],
+    F: [5, 10],
+    G: [5, 10],
+    H: [5, 10],
+    I: [5, 10],
+    J: [5, 10],
+    K: [4, 10]
+  }
 
   // container header
   header += '<div class="header"><div class="empty-seat"></div>';
@@ -57,13 +70,17 @@ function createRaffleContainer() {
   }
   header += '</div>';
 
-  // container body
-  for (var row in rowsCount) {
-    content += '<div class="row"><div class="row-letter">' + row + '</div>';
-    for (i = 0; i < rowsCount[row]; i++) {
-      content += '<div class="seat"><i class="material-icons">event_seat</i></div>'
-    }
-    content += '</div>';
+    // container body
+    for(var row in rowsCount){
+      content += '<div class="row"><div class="row-letter">' + row + '</div>';
+      for(i=0; i<rowsCount[row]; i++){
+          if(excludedSeats[row].includes(i+1)){
+            content += '<div class="empty-seat"></div>';
+          }else{
+            content += '<div class="seat"><i class="material-icons">event_seat</i></div>'
+          }
+      }
+      content += '</div>';
   }
   container.html(header + content);
 }
