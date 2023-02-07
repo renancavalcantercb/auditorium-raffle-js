@@ -43,7 +43,7 @@
 }
 
 #animation-container {
-    width: 100%;
+    width: 105%;
 }
 
 #raffle-winner {
@@ -71,7 +71,7 @@
     text-align: center;
     display: inline-block;
     color: grey;
-    width: calc(100% / 38);
+    width: calc(100% /43);
     border: 1px solid transparent;
 }
 
@@ -82,18 +82,18 @@
     padding: 0;
     display: inline-block;
     color: grey;
-    width: calc(100% / 38);
+    width: calc(100% /43);
 }
 
 .seat {
   text-align: center;
-  width: calc(100% / 38);
+  width: calc(100% /43);
   display: inline-block;
 }
 
 .empty-seat {
   text-align: center;
-  width: calc(100% / 38);
+  width: calc(100% /43);
   display: inline-block;
   border: 1px solid transparent;
 }

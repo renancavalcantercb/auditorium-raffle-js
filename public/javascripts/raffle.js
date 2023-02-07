@@ -10,7 +10,7 @@ var rowsCount = { // room configuration
   H: 36,
   I: 36,
   J: 36,
-  K: 36
+  K: 37
 };
 
 /* ============================================================ */
@@ -49,17 +49,17 @@ function createRaffleContainer() {
   var header = "";
   var content = "";
   let = excludedSeats = {
-    A: [7, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 30, 34],
-    B: [7, 19],
-    C: [7, 19],
-    D: [7, 19],
-    E: [7, 19],
-    F: [7, 19],
-    G: [7, 19],
-    H: [7, 19],
-    I: [7, 19],
-    J: [7, 19],
-    K: [12,19]
+    A: [],
+    B: [],
+    C: [],
+    D: [],
+    E: [],
+    F: [],
+    G: [],
+    H: [],
+    I: [],
+    J: [],
+    K: [12, 13, 25, 26, 37]
   }
 
   // container header
@@ -74,16 +74,28 @@ function createRaffleContainer() {
     for(var row in rowsCount){
       content += '<div class="row"><div class="row-letter">' + row + '</div>';
       for(i=0; i<rowsCount[row]; i++){
-          if(excludedSeats[row].includes(i+1)){
-            content += '<div class="empty-seat"></div>';
-          }else{
-            content += '<div class="seat"><i class="material-icons">event_seat</i></div>'
-          }
+      if (i === 12 || i === 24 || i === 36) {
+        if( i === 36 && row === 'K'){
+          content += '<div class="seat"><i class="material-icons">event_seat</i></div>'
+        }
+          else{
+      content += '<div class="empty-seat"></div>';
+    }
       }
+      if(excludedSeats[row].includes(i+1)){
+        content += '<div class="empty-seat"></div>';
+      }else{
+        content += '<div class="seat"><i class="material-icons">event_seat</i></div>'
+      }    
+        }
       content += '</div>';
   }
   container.html(header + content);
+  document.querySelector('.header > .row-number:nth-child(13)').style.marginRight = '27px';
+  document.querySelector('.header > .row-number:nth-child(25)').style.marginRight = '27px';
+  document.querySelector('#animation-container > .row:nth-child(12)').style.paddingTop = "24px";
 }
+
 
 /* Discover the highest number of seats in a single row */
 function findLongestRow(rows) {
