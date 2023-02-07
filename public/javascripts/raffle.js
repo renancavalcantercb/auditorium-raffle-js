@@ -1,6 +1,5 @@
 var animationId, pos = 0;
 var rowsCount = { // room configuration
-  A: 36,
   B: 36,
   C: 36,
   D: 36,
@@ -49,7 +48,6 @@ function createRaffleContainer() {
   var header = "";
   var content = "";
   let = excludedSeats = {
-    A: [],
     B: [],
     C: [],
     D: [],
